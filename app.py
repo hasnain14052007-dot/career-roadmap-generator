@@ -224,7 +224,7 @@ def generate_roadmap(api_key: str, prompt: str) -> str:
 
     client = genai.Client(api_key=api_key)
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         contents=prompt,
     )
     return response.text
